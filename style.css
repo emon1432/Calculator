@@ -1,18 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 .heading {
     text-align: center;
     color: royalblue;
     padding: 50px;
     font-size: 40px;
 }
-b:hover{
+
+b:hover {
     color: red;
     font-size: 50px;
 }
-.contain{
+
+.contain {
     margin: 0 auto;
     margin-top: 10px;
     max-width: 500px;
@@ -21,11 +24,13 @@ b:hover{
     transition: 0.3s;
     font-size: 0;
 }
-.contain:hover{
+
+.contain:hover {
     cursor: pointer;
     box-shadow: 4px 16px 32px 4px rgba(47, 0, 255, 0.5);
 }
-.screen #result{
+
+.screen #result {
     width: 450px;
     height: 150px;
     margin: 0 auto;
@@ -35,7 +40,8 @@ b:hover{
     padding: 0 10px;
     letter-spacing: 3px;
 }
-.btn{
+
+.btn {
     width: 118px;
     height: 100px;
     font-weight: bold;
@@ -43,13 +49,16 @@ b:hover{
     background-color: rgba(17, 62, 212, 0.5);
     color: white;
 }
-.operation-btn{
+
+.operation-btn {
     background-color: red;
 }
-.operation-btn1{
+
+.operation-btn1 {
     background-color: orange;
 }
-.btn:hover{
+
+.btn:hover {
     cursor: pointer;
     background-color: black;
 }
