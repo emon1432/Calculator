@@ -1,3 +1,7 @@
+//  part 1 vanila javascript
+
+
+/* 
 var screen = document.querySelector("#result");
 var clear = document.querySelector("#clean");
 var del = document.querySelector("#delete");
@@ -138,3 +142,92 @@ equal.addEventListener("click", function() {
             screen.value = buttonValue;
         })
     }*/
+
+
+
+
+
+
+//  part 2 use eval() function
+
+
+
+
+
+
+//for using calculation log for one run
+let history = [];
+let screen = document.querySelector("#result");
+let flag = 0;
+let eval_calculation;
+
+function writescreen(x) {
+    x = String(x);
+    if (x != "AC" && x != "=" && x != "del") {
+
+        if ((x == "+" || x == "-" || x == "X" || x == "/") && flag == 1) {
+            screen.value = eval_calculation;
+            screen.value += x;
+            flag = 0;
+        } else if (flag == 1) {
+            screen.value = "";
+            flag = 0;
+            screen.value += x;
+        } else {
+            screen.value += x;
+        }
+    }
+    if (x == "AC") {
+        screen.value = "";
+    }
+    if (x == "del") {
+        let temp_content = screen.value;
+        console.log(temp_content);
+        let after_delete = temp_content.slice(0, -1);
+        screen.value = after_delete;
+        console.log(after_delete);
+    }
+    if (x == "=") {
+        flag = 1;
+        try {
+
+            let content = screen.value;
+            content = content.replace("X", "*");
+            console.log(content);
+            let content_to_save_history = screen.value;
+            eval_calculation = eval(content);
+            history.push(screen.value += " = " + eval_calculation);
+        } catch (err) {
+            screen.value = "SYNTAX ERROR!";
+            console.log(err);
+        }
+    }
+}
+
+
+let i = history.length;
+
+
+function showhistory(x) {
+    screen.value = "";
+    if (x == "up") {
+        i--;
+    }
+    if (x == 'down') {
+        i++;
+    }
+    if (i > history.length) {
+        i = 0;
+    }
+    if (i < 0) {
+        i = history.length;
+    }
+    if (history[i] != undefined) {
+
+        screen.value = history[i];
+    }
+
+
+
+
+}

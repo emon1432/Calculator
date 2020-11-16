@@ -19,39 +19,37 @@
         </div>
         <div class="buttons">
             <div>
-                <input type="button" class="btn" id="clean" value="C">
-                <input type="button" class="btn" value="+/-">
-                <input type="button" class="btn" value="%">
-                <input type="button" class="btn operation-btn" id="div" value="/">
+                <input type="button" class="btn" id="clean" value="AC" onclick="writescreen('AC')">
+                <input type="button" class="btn" value="UP" onclick="showhistory('up')">
+                <input type="button" class="btn" value="DOWN" onclick="showhistory('down')">
+                <input type="button" class="btn operation-btn" id="div" value="/" onclick="writescreen('/')">
             </div>
             <div>
-                <input type="button" class="btn" id="seven" value="7">
-                <input type="button" class="btn" id="eight" value="8">
-                <input type="button" class="btn" id="nine" value="9">
-                <input type="button" class="btn operation-btn" id="multi" value="X">
+                <input type="button" class="btn" id="seven" value="7" onclick="writescreen('7')">
+                <input type="button" class="btn" id="eight" value="8" onclick="writescreen('8')">
+                <input type="button" class="btn" id="nine" value="9" onclick="writescreen('9')">
+                <input type="button" class="btn operation-btn" id="multi" value="X" onclick="writescreen('X')">
             </div>
             <div>
-                <input type="button" class="btn" id="four" value="4">
-                <input type="button" class="btn" id="five" value="5">
-                <input type="button" class="btn" id="six" value="6">
-                <input type="button" class="btn operation-btn" id="sub" value="-">
+                <input type="button" class="btn" id="four" value="4" onclick="writescreen('4')">
+                <input type="button" class="btn" id="five" value="5" onclick="writescreen('5')">
+                <input type="button" class="btn" id="six" value="6" onclick="writescreen('6')">
+                <input type="button" class="btn operation-btn" id="sub" value="-" onclick="writescreen('-')">
             </div>
             <div>
-                <input type="button" class="btn" id="one" value="1">
-                <input type="button" class="btn" id="two" value="2">
-                <input type="button" class="btn" id="three" value="3">
-                <input type="button" class="btn operation-btn" id="plus" value="+">
+                <input type="button" class="btn" id="one" value="1" onclick="writescreen('1')">
+                <input type="button" class="btn" id="two" value="2" onclick="writescreen('2')">
+                <input type="button" class="btn" id="three" value="3" onclick="writescreen('3')">
+                <input type="button" class="btn operation-btn" id="plus" value="+" onclick="writescreen('+')">
             </div>
             <div>
-                <input type="button" class="btn" id="zero" value="0">
-                <input type="button" class="btn" id="dot" value=".">
-                <input type="button" class="btn" id="delete" value="DEL">
-                <input type="button" class="btn operation-btn1" id="equal" value="=">
+                <input type="button" class="btn" id="zero" value="0" onclick="writescreen('0')">
+                <input type="button" class="btn" id="dot" value="." onclick="writescreen('.')">
+                <input type="button" class="btn" id="delete" value="DEL" onclick="writescreen('del')">
+                <input type="button" class="btn operation-btn1" id="equal" value="=" onclick="writescreen('=')">
             </div>
         </div>
-
     </div>
-    <p style="text-align: center; margin-top: 50px;">NOTE : Only for 2 operand and one operator (a+b)</p>
     <script src="index.js"></script>
 
 </body>
