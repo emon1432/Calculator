@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #1E2326;
 }
 
 .heading {
@@ -18,7 +19,7 @@ b:hover {
 .contain {
     margin: 0 auto;
     margin-top: 10px;
-    max-width: 500px;
+    width: 500px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(47, 0, 255, 0.5);
     transition: 0.3s;
@@ -31,31 +32,33 @@ b:hover {
 }
 
 .screen #result {
-    width: 450px;
+    width: 500px;
     height: 150px;
     margin: 0 auto;
+    background-color: white;
     text-align: right;
     font-size: 50px;
     font-weight: bold;
     padding: 0 10px;
     letter-spacing: 3px;
+    box-sizing: border-box;
 }
 
 .btn {
-    width: 118px;
+    width: 125px;
     height: 100px;
     font-weight: bold;
     font-size: 30px;
-    background-color: rgba(17, 62, 212, 0.5);
+    background-color: #1E2326;
     color: white;
 }
 
 .operation-btn {
-    background-color: red;
+    background-color: #5E4BB6;
 }
 
 .operation-btn1 {
-    background-color: orange;
+    background-color: #FEC208;
 }
 
 .btn:hover {
